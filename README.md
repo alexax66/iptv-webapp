@@ -14,7 +14,7 @@ Just like a real TV: One application for the live streams of all TV stations, no
 
 ## Installation
 
-Just open `index.html` in a modern web browser.
+Just open [`index.html`](https://raw.githack.com/probonopd/iptv-webapp/main/index.html) in a web browser (tested in 2023 Edge).
 
 ### On Smart TVs
 
