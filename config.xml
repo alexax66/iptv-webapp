@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.samsung.com/ns/2010/app" version="1.0.0">
+    <widgetname>MyTVWidget</widgetname>
+    <type>Application</type>
+    <name>My TV Widget</name>
+    <description>Loads an M3U playlist and acts like a normal TV.</description>
+    <category>Video</category>
+    <icon>icon.png</icon>
+    <screenshot></screenshot>
+    <wideicon></wideicon>
+    <author>
+        <name>Your Name</name>
+        <email>your.email@example.com</email>
+    </author>
+    <content>
+        <main>index.html</main>
+    </content>
+</widget>
