@@ -14,7 +14,7 @@ Just like a real TV: One application for the live streams of all TV stations, no
 
 ## Installation
 
-Just open [`index.html`](https://htmlpreview.github.io/?https://github.com/probonopd/iptv-webapp/blob/main/index.html) in a modern web browser.
+Just open `index.html` in a modern web browser.
 
 ### On Smart TVs
 
@@ -27,4 +27,4 @@ To sideload:
 - Navigate to the "Smart Hub" on your TV
 - Go to "My Apps" and look for an option to manage or install apps from a USB device
 
-Currently it can be launched but doesn't seem to play the streams. We need to find a way to see the debug output of the embedded browser in the Samsung Smart TV to see what is going on. Possibly we need to use the [TV SDK for Samsung Legacy Platform](https://developer.samsung.com/smarttv/legacy/tools/history.html) to do this in a simulator?
+Currently it can be launched but doesn't seem to play the streams. We need to find a way to see the debug output of the embedded browser in the Samsung Smart TV to see what is going on. Possibly we need to use the [TV SDK for Samsung Legacy Platform](https://developer.samsung.com/smarttv/legacy/tools/history.html) to do this in a simulator, e.g., from Samsung TV SDK 4.1.
