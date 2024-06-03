@@ -22,7 +22,7 @@ As a stetch goal, it would be nice if we could get this to work on, e.g., Samsun
 
 To sideload:
 
-- Copy the contents of this directory into a directory on a FAT32 formatted USB stic
+- Copy the contents of this directory into a directory on a FAT32 formatted USB stick
 - Insert the USB stick into your Samsung TV
 - Navigate to the "Smart Hub" on your TV
 - Go to "My Apps" and look for an option to manage or install apps from a USB device
