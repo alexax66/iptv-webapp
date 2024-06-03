@@ -28,3 +28,5 @@ To sideload:
 - Go to "My Apps" and look for an option to manage or install apps from a USB device
 
 Currently it can be launched but doesn't seem to play the streams. We need to find a way to see the debug output of the embedded browser in the Samsung Smart TV to see what is going on. Possibly we need to use the [TV SDK for Samsung Legacy Platform](https://developer.samsung.com/smarttv/legacy/tools/history.html) to do this in a simulator, e.g., from Samsung TV SDK 4.1.
+
+For information on how to load Orsay applications via the network, see https://github.com/oherau/jellyfin-samsung-orsay-os. Using a USB stick seems simpler.
