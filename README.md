@@ -2,9 +2,9 @@
 
 ## Motivation
 
-Looking for an easy application to simulate linear (satellite or cable) TV but using the TV station's own IPTV streams without requiring the Internet provider's or an over-the-top (OTT) provider's TV streaming service. It uses the streams which TV stations themselves publish (in Germany, financed by the general population).
+Looking for an easy application to simulate linear (satellite or cable) TV but using the TV station's own IPTV streams without requiring the Internet provider's or an over-the-top (OTT) provider's TV streaming service. It uses the streams which TV stations themselves publish (in Germany, public stations financed by the general population).
 
-Just like a real TV: One application for all TV stations, not one per station (ARD, ZDF, etc.)
+Just like a real TV: One application for the live streams of all TV stations, not one per station (ARD, ZDF, etc.)
 
 ## Features
 
