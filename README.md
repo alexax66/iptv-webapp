@@ -14,7 +14,7 @@ Just like a real TV: One application for all TV stations, not one per station (A
 
 ## Installation
 
-Just open `index.html` in a modern web browser.
+Just open [`index.html`](https://htmlpreview.github.io/?https://github.com/probonopd/iptv-webapp/blob/main/index.html) in a modern web browser.
 
 ### On Smart TVs
 
