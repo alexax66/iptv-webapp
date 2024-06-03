@@ -29,4 +29,4 @@ To sideload:
 
 Currently it can be launched but doesn't seem to play the streams. We need to find a way to see the debug output of the embedded browser in the Samsung Smart TV to see what is going on. Possibly we need to use the [TV SDK for Samsung Legacy Platform](https://developer.samsung.com/smarttv/legacy/tools/history.html) to do this in a simulator, e.g., from Samsung TV SDK 4.1.
 
-For information on how to load Orsay applications via the network, see https://github.com/oherau/jellyfin-samsung-orsay-os. Using a USB stick seems simpler.
+For information on how to load Orsay applications via the network, see https://github.com/oherau/jellyfin-samsung-orsay-os. Using a USB stick seems simpler but possibly does not open the port to access the Remote Web Inspector (RWI) at http://tvip:7011, unlike when loading Orsay applications via the network. As an alternative to RWI, the Weinre debugger might be used: https://www.youtube.com/watch?v=4nL6xey13fE (the server seems to require `node` on the machine on which the server is to be hosted).
