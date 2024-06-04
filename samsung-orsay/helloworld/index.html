@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Common widget API -->
+<script type="text/javascript" src="$MANAGER_WIDGET/Common/API/Plugin.js"></script>
+<script type="text/javascript" src="$MANAGER_WIDGET/Common/Plugin/Define.js"></script>
+<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+<script src="$CAPH/1.0.0/caph-level1-unified.min.js" type="text/javascript"></script>
+
+<script>
+var flag = false;
+var widgetAPI = new Common.API.Widget();
+var pluginAPI = new Common.API.Plugin();
+function func_onLoad() {
+    if (typeof curWidget != 'undefined') {
+        curWidget.setPreference("ready", "true");
+    }
+    if (!caph.platform.dtv.Browser || caph.platform.dtv.Browser.browserType().sectvbd) {
+    } else {
+        widgetAPI.sendReadyEvent();
+    }
+}
+window.onShow = function(e) {
+    if (flag === false) {
+        flag = true;
+        // This line starts the application
+        widgetAPI.sendReadyEvent();
+    }
+}
+
+var tvKeyOrsay = new Common.API.TVKeyValue();
+var tvKey = {
+    KEY_RETURN: tvKeyOrsay.KEY_RETURN,
+    KEY_PANEL_RETURN: tvKeyOrsay.KEY_PANEL_RETURN,
+    KEY_EXIT: tvKeyOrsay.KEY_EXIT,
+    KEY_UP: tvKeyOrsay.KEY_UP,
+    KEY_DOWN: tvKeyOrsay.KEY_DOWN,
+    KEY_LEFT: tvKeyOrsay.KEY_LEFT,
+    KEY_RIGHT: tvKeyOrsay.KEY_RIGHT,
+    KEY_ENTER: tvKeyOrsay.KEY_ENTER,
+    KEY_PANEL_ENTER: tvKeyOrsay.KEY_PANEL_ENTER,
+    KEY_VIDEO_REWIND: tvKeyOrsay.KEY_RW,
+    KEY_VIDEO_FASTFORWARD: tvKeyOrsay.KEY_FF,
+    KEY_PLAY_PAUSE: tvKeyOrsay.KEY_PLAY_PAUSE,
+    KEY_VIDEO_PLAY: tvKeyOrsay.KEY_PLAY,
+    KEY_VIDEO_PAUSE: tvKeyOrsay.KEY_PAUSE,
+    KEY_VIDEO_STOP: tvKeyOrsay.KEY_STOP,
+    KEY_MUTE: tvKeyOrsay.KEY_MUTE,
+    KEY_VOLUME_UP: tvKeyOrsay.KEY_VOL_UP,
+    KEY_KEY_PANEL_VOL_UP: tvKeyOrsay.KEY_PANEL_VOL_UP,
+    KEY_PANEL_VOL_DOWN: tvKeyOrsay.KEY_PANEL_VOL_DOWN,
+    KEY_VOLUME_DOWN: tvKeyOrsay.KEY_VOL_DOWN
+};
+
+window.addEventListener("keydown", function(event) {
+    switch (event.keyCode) {
+        case tvKey.KEY_EXIT:
+            var widgetAPI = new Common.API.Widget();
+            widgetAPI.sendExitEvent(event);
+            break;
+    }
+});
+
+</script>
+
+</head>
+<body onload="func_onLoad();" style="background-color: white; color: black;">
+    Hello world!
+</body>
+</html>
