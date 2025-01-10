@@ -5,7 +5,7 @@ var inputTimeout;
 
 function getQueryParameter() {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.has('playlist') ? urlParams.get('playlist') : 'https://raw.githubusercontent.com/smolnp/IPTVru/gh-pages/IPTVmini.m3u';
+    return urlParams.has('playlist') ? urlParams.get('playlist') : 'https://raw.githubusercontent.com/smolnp/IPTVru/gh-pages/IPTVstable.m3u8';
 }
 
 function loadPlaylist(url) {
